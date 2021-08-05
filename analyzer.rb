@@ -23,5 +23,7 @@ puts "The text has #{paragraph_count} paragraphs"
 sentence_count = text.split(/\.|\?|!/).length #count the sentences using ". or ? or !" as parameter.
 puts "The text has #{sentence_count} sentences"
 
+puts "The text has #{sentence_count / paragraph_count} sentences per paragraph (average)"
 
+puts "The text has #{word_count / sentence_count} words per sentence (average)"
 
