@@ -8,19 +8,19 @@ text = lines.join #Put the text into array.
 
 puts "The text has #{line_count} line(s)" 
 
-total_characters = text.length
+total_characters = text.length #count the number of caracters with spaces.
 puts "The text has #{total_characters} characters"
 
-total_characters_nospaces = text.gsub(/\s+/, '').length
+total_characters_nospaces = text.gsub(/\s+/, '').length #count the number of caracters without spaces.
 puts "The text has #{total_characters_nospaces} characters excluding spaces"
 
-word_count = text.split.length
+word_count = text.split.length #count the words 
 puts "The text has #{word_count} words"
 
-paragraph_count = text.split(/\n\n/).length
+paragraph_count = text.split(/\n\n/).length #count the paragraphs using two spaces as parameter.
 puts "The text has #{paragraph_count} paragraphs"
 
-sentence_count = text.split(/\.|\?|!/).length
+sentence_count = text.split(/\.|\?|!/).length ##count the sentences using ". or ? or !" as parameter.
 puts "The text has #{sentence_count} sentences"
 
 
